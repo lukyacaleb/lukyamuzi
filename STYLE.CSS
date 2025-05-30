@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 1;
+    padding: 5;
+    background-color: #f9f8f4;
+}
+
+header {
+    background: #ee004f;
+    color: white;
+    padding: 50px 0;
+}.projects {
+    padding: 50px;
+}
+
+.project-card {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}@media (max-width: 600px) {
+    .project-card {
+        width: 95%;
+    }
+}.contact {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+}
+
+input, textarea, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-family: Arial;
+}
+
+button {
+    background: #6200ee;
+    color: white;
+    border: none;
+    cursor: pointer;
+}.projects {
+    display: flex;          /* Activates Flexbox */
+    flex-wrap: wrap;       /* Allows wrapping on small screens */
+    justify-content: center; /* Centers cards */
+    gap: 20px;             /* Adds space between cards */
+    padding: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    width: 300px;          /* Fixed width for each card */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #3700b3;
+}.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.gallery-item {
+    aspect-ratio: 1; /* Square items */
+    background: #6200ee;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+}.project-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}

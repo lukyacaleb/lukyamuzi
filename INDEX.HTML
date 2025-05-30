@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm [CALED]</h1>
+        <p>Web Developer in Training</p>
+    </header>
+</body>
+</html>
+<section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A simple HTML/CSS website.</p>
+    </div>
+</section><section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section><script>
+    const darkModeToggle = document.createElement('button');
+    darkModeToggle.textContent = '🌙 Dark Mode';
+    darkModeToggle.style.position = 'fixed';
+    darkModeToggle.style.top = '10px';
+    darkModeToggle.style.right = '10px';
+    darkModeToggle.onclick = function() {
+        document.body.classList.toggle('dark-mode');
+    };
+    document.body.appendChild(darkModeToggle);
+</script><section class="gallery">
+    <div class="gallery-item">🌄</div>
+    <div class="gallery-item">📊</div>
+    <div class="gallery-item">🎨</div>
+</section>
